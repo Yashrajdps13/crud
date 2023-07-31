@@ -112,7 +112,7 @@ class _MyAppState extends State<MyApp> {
   }
   Future<String> createData() async {
     String res="Some error has occured";
-    DocumentReference documentReference=FirebaseFirestore.instance.collection("Hackslash_Kotlin").doc(studentIndex);
+    DocumentReference documentReference=FirebaseFirestore.instance.collection("Hackslash_Web").doc(studentIndex);
     String photoUrl= await StorageMethods().uploadImageToStorage('profile_Management',image!,false,studentName!);
     Map<String, dynamic> students= {
       "studentName": studentName,
