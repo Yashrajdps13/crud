@@ -39,6 +39,8 @@
 // //
 // //
 // //
+import 'package:crud/pages/kotlin.dart';
+import 'package:crud/pages/management.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:crud/pages/landingPage.dart';
@@ -71,8 +73,10 @@ class MyApp extends StatelessWidget {
           MyRoutes.AI_MLRoute:(context)=>AI_ML(),
           MyRoutes.Web_DevRoute:(context)=>Web_developers(),
           MyRoutes.FlutterRoute:(context)=>FlutterPage(),
+          MyRoutes.KotlinRoute:(context)=>KotlinPage(),
           MyRoutes.DSARoute:(context)=>DSAers(),
           MyRoutes.DesigningRoute:(context)=>Designers(),
+          MyRoutes.ManagementRoute:(context)=>ManagementPage(),
         }
     );
   }

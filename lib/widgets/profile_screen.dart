@@ -14,9 +14,9 @@ Future<void> _launchURL(String url) async{
 class ProfileCard extends StatelessWidget {
   final snap;
   const ProfileCard({Key? key, required this.snap,}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
+    String x=snap['studentYear'].toString();
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 5),
       child: Container(
@@ -74,14 +74,28 @@ class ProfileCard extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 10,),
-                    Text(
-                      '3rd Year in BTech Computer Science',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 8,
-                        fontFamily: 'Lato',
-                        fontWeight: FontWeight.w300,
-                      ),
+                    Row(
+                      children: [
+                        Text(
+                          x=='2.0'? '2nd Year ':'3rd Year ',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 8,
+                            fontFamily: 'Lato',
+                            fontWeight: FontWeight.w300,
+                          ),
+                        ),
+                        Text(
+                          snap['studentBranch'],
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 8,
+                            fontFamily: 'Lato',
+                            fontWeight: FontWeight.w300,
+                          ),
+                        ),
+
+                      ],
                     ),
                     SizedBox(height: 9),
                     InkWell(

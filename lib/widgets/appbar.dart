@@ -15,7 +15,7 @@ class _MyAppBarState extends State<MyAppBar> {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: Color(0xff1394E8),
+      backgroundColor: Color(0xFF1394E8),
       elevation: 0.0,
       title: Row(children: [
         Padding(padding: EdgeInsets.fromLTRB(99, 0, 0, 0)),
