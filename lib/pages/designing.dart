@@ -16,7 +16,7 @@ class _DesignersState extends State<Designers> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MyAppBar(),
+      appBar: MyAppBar(domain: "Designing"),
       body: StreamBuilder(
         stream: FirebaseFirestore.instance.collection('Hackslash_Design').snapshots(),
         builder: (context, AsyncSnapshot<QuerySnapshot<Map<String, dynamic>>> snapshot){

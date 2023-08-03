@@ -14,7 +14,7 @@ class _Landing_PageState extends State<Landing_Page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:MyAppBar(),
+      appBar:MyAppBar(domain: "App Name"),
       body: Padding(
         padding: EdgeInsets.all(0.0),
         child: SingleChildScrollView(
@@ -27,6 +27,7 @@ class _Landing_PageState extends State<Landing_Page> {
               Domain(name:"DSA and Programming",imageURL: "images/dsa.png",renderpage: MyRoutes.DSARoute,),
               Domain(name:"Designing",imageURL: "images/designing.png",renderpage: MyRoutes.DesigningRoute,),
               Domain(name:"Management",imageURL: "images/management.png",renderpage: MyRoutes.ManagementRoute,),
+              SizedBox(height: 40)
             ],
           ),
         ),

@@ -16,7 +16,7 @@ class _AI_MLState extends State<AI_ML> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MyAppBar(),
+      appBar: MyAppBar(domain: "AI & ML"),
       body: StreamBuilder(
         stream: FirebaseFirestore.instance.collection('Hackslash_ML').snapshots(),
         builder: (context, AsyncSnapshot<QuerySnapshot<Map<String, dynamic>>> snapshot){

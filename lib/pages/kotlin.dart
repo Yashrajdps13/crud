@@ -16,7 +16,7 @@ class _KotlinPageState extends State<KotlinPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MyAppBar(),
+      appBar: MyAppBar(domain: "Kotlin",),
       body: StreamBuilder(
         stream: FirebaseFirestore.instance.collection('Hackslash_Kotlin').snapshots(),
         builder: (context, AsyncSnapshot<QuerySnapshot<Map<String, dynamic>>> snapshot){

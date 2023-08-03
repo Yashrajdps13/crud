@@ -15,7 +15,7 @@ class _Web_developersState extends State<Web_developers> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MyAppBar(),
+      appBar: MyAppBar(domain: "Web Development",),
       body: StreamBuilder(
         stream: FirebaseFirestore.instance.collection('Hackslash_Web').snapshots(),
         builder: (context, AsyncSnapshot<QuerySnapshot<Map<String, dynamic>>> snapshot){
@@ -29,7 +29,7 @@ class _Web_developersState extends State<Web_developers> {
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
                 crossAxisSpacing: 5,
-                mainAxisSpacing: 5,
+                mainAxisSpacing: 30,
                 childAspectRatio: 160/200,
               ),
               itemCount: snapshot.data?.docs.length,

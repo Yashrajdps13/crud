@@ -1,19 +1,24 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:crud/profile.dart';
 import 'package:crud/routes/mapping.dart';
 import 'package:flutter/material.dart';
 
-class ProfileCard extends StatelessWidget {
+class ProfileCard extends StatefulWidget {
   final snap;
   final domain;
   const ProfileCard({Key? key, required this.snap,required this.domain}) : super(key: key);
 
   @override
+  State<ProfileCard> createState() => _ProfileCardState();
+}
 
+class _ProfileCardState extends State<ProfileCard> {
+  @override
   Widget build(BuildContext context) {
-    String x=snap['studentYear'].toString();
-    String branch=snap['studentBranch'];
+    String x=widget.snap['studentYear'].toString();
+    String branch=widget.snap['studentBranch'];
     return InkWell(
-      onTap: () {Navigator.push(context,MaterialPageRoute(builder: (context) =>Profile_Page(y: x, domain: domain, name: snap['StudentName'], branch: branch, post: snap['studentPost'], photo:snap['photoURL'], linkedinLink: snap['studentURL'])));},
+      onTap: () {Navigator.push(context,MaterialPageRoute(builder: (context) =>Profile_Page(y: x, domain: widget.domain, name: widget.snap['studentName'], branch: widget.snap['studentBranch'], post: widget.snap['studentPost'], photo:widget.snap['photoURL'], linkedinLink: widget.snap['StudentURL'])));},
       child: Container(
         margin: EdgeInsets.only(top: 20, left: 10,right:5),
         height: 200,
@@ -68,17 +73,15 @@ class ProfileCard extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.all(Radius.circular(10)),
                               image: DecorationImage(
-                                  image: NetworkImage(
-                                    snap['photoURL']
-                                  ),
-                                  fit: BoxFit.cover),
+                                  image: CachedNetworkImageProvider(widget.snap['photoURL'])
+                              )
                             )),
 
                       ],
                     ),
                     Container(
                         margin: EdgeInsets.only(top:10),
-                        child:Text(snap['studentName'],style:TextStyle(color:Color(0xff3E4C5A),fontWeight: FontWeight.bold),textAlign: TextAlign.center,)
+                        child:Text(widget.snap['studentName'],style:TextStyle(color:Color(0xff3E4C5A),fontWeight: FontWeight.bold),textAlign: TextAlign.center,)
                     ),
                     Row(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -132,7 +135,7 @@ class ProfileCard extends StatelessWidget {
                       child: Align(
                         alignment: Alignment.center,
                         child: Text(
-                          snap['studentPost'],
+                          widget.snap['studentPost'],
                           style: TextStyle(
                               color: Color.fromARGB(255, 253, 253, 253),
                               fontSize: 10),

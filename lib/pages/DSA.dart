@@ -15,7 +15,7 @@ class _DSAersState extends State<DSAers> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MyAppBar(),
+      appBar: MyAppBar(domain: "DSA"),
       body: StreamBuilder(
         stream: FirebaseFirestore.instance.collection('Hackslash_dsa').snapshots(),
         builder: (context, AsyncSnapshot<QuerySnapshot<Map<String, dynamic>>> snapshot){

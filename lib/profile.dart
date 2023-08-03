@@ -26,7 +26,7 @@ class Profile_Page extends StatelessWidget {
   Widget build(BuildContext context) {
     String year=y=='2'?'Second':'Third';
     return Scaffold(
-      appBar: MyAppBar(),
+      appBar: MyAppBar(domain: domain),
       backgroundColor: Color(0xffECF9FF),
       body: SingleChildScrollView(
         child: Column(

@@ -18,7 +18,7 @@ class _FlutterPageState extends State<FlutterPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MyAppBar(),
+      appBar: MyAppBar(domain: "Flutter"),
       body: StreamBuilder(
         stream: FirebaseFirestore.instance.collection('Hackslash_flutter').snapshots(),
         builder: (context, AsyncSnapshot<QuerySnapshot<Map<String, dynamic>>> snapshot){
