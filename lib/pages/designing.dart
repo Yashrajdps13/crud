@@ -2,7 +2,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 import '../widgets/appbar.dart';
-import '../widgets/profile_screen.dart';
+import '../widgets/profile_card.dart';
+import '../widgets/old_profile_screen.dart';
 
 class Designers extends StatefulWidget {
   const Designers({super.key});
@@ -24,11 +25,18 @@ class _DesignersState extends State<Designers> {
               child: CircularProgressIndicator(),
             );
           }
-          return ListView.builder(
+          return GridView.builder(
             //itemCount: snapshot.data!.docs.length,
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+                crossAxisSpacing: 5,
+                mainAxisSpacing: 5,
+                childAspectRatio: 160/200,
+              ),
               itemCount: snapshot.data?.docs.length,
               itemBuilder: (context, index)=> Container(child: ProfileCard(
                 snap: snapshot.data?.docs[index].data(),
+                domain: 'Designing'
               ),)
           );
         },
