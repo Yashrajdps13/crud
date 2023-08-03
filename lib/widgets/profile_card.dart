@@ -58,25 +58,19 @@ class _ProfileCardState extends State<ProfileCard> {
                     Stack(
                       children: [
                         Container(
-                            margin: EdgeInsets.only(top: 33,left:3),
-                            height: 50,
-                            width: 50,
+                            margin: EdgeInsets.only(top: 20,),
+                            height: 60,
+                            width: 60,
                             decoration: BoxDecoration(
-
-                                borderRadius: BorderRadius.all(Radius.circular(10)),
-                                border:Border.all(width: 0.5,color:Color.fromARGB(221, 0, 0, 0))
-                            )),
-                        Container(
-                            margin: EdgeInsets.only(top: 30),
-                            height: 50,
-                            width: 50,
-                            decoration: BoxDecoration(
+                              boxShadow: [BoxShadow(
+                                  color: Color.fromARGB(191, 52, 51, 51),
+                                  blurRadius: 4.0,offset: Offset(2, 2)
+                              ),],
                               borderRadius: BorderRadius.all(Radius.circular(10)),
                               image: DecorationImage(
-                                  image: CachedNetworkImageProvider(widget.snap['photoURL'])
-                              )
+                                  image: CachedNetworkImageProvider(widget.snap['photoURL']),
+                                  fit: BoxFit.cover),
                             )),
-
                       ],
                     ),
                     Container(

@@ -24,7 +24,8 @@ class Profile_Page extends StatelessWidget {
   const Profile_Page({Key? key, required this.y,required this.domain,required this.name, required this.branch, required this.post,required this.photo,required this.linkedinLink}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    String year=y=='2'?'Second':'Third';
+    String year=y=='2.0'?'Second':'Third';
+    String custom=domain=='Management'?"and is $post of Hackslash":"has an expertise in $domain and is a $post at Hackslash";
     return Scaffold(
       appBar: MyAppBar(domain: domain),
       backgroundColor: Color(0xffECF9FF),
@@ -95,7 +96,7 @@ class Profile_Page extends StatelessWidget {
               child: Align(
                   alignment: Alignment.center,
                   child: Text(
-                    "$name is a $year Year Student persuing $branch. They have expertise in field of $domain and is $post at HackSlash Club.",
+                    "$name is a $year Year Student persuing $branch, $custom.",
                     style: TextStyle(
                       color: Color(0xff3E4C5A),
                       fontSize: 13,
@@ -119,7 +120,7 @@ class Profile_Page extends StatelessWidget {
                   child: Align(
                     alignment: Alignment.center,
                     child: Text(
-                      "Python",
+                      y=='2.0'?'2nd Year':'3rd Year',
                       style: TextStyle(
                           color: Color.fromARGB(255, 253, 253, 253),
                           fontSize: 10),
@@ -142,7 +143,7 @@ class Profile_Page extends StatelessWidget {
                   child: Align(
                     alignment: Alignment.center,
                     child: Text(
-                      "Image Processing",
+                      post,
                       style: TextStyle(
                           color: Color.fromARGB(255, 253, 253, 253),
                           fontSize: 10),
@@ -162,7 +163,7 @@ class Profile_Page extends StatelessWidget {
                   child: Align(
                     alignment: Alignment.center,
                     child: Text(
-                      "R Language",
+                      branch,
                       style: TextStyle(
                           color: Color.fromARGB(255, 253, 253, 253),
                           fontSize: 10),
