@@ -1,6 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:crud/widgets/appbar.dart';
-import 'package:crud/widgets/old_profile_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../widgets/profile_card.dart';

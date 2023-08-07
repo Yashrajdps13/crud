@@ -1,9 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-
 import '../widgets/appbar.dart';
 import '../widgets/profile_card.dart';
-import '../widgets/old_profile_screen.dart';
 class Web_developers extends StatefulWidget {
   const Web_developers({super.key});
 
@@ -25,7 +23,6 @@ class _Web_developersState extends State<Web_developers> {
             );
           }
           return GridView.builder(
-            //itemCount: snapshot.data!.docs.length,
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
                 crossAxisSpacing: 5,

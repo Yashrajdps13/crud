@@ -23,30 +23,30 @@ class _ProfileCardState extends State<ProfileCard> {
         margin: EdgeInsets.only(top: 20, left: 10,right:5),
         height: 200,
         width: 160,
-        decoration: BoxDecoration(
-          boxShadow: [BoxShadow(
-              color: Color.fromARGB(255, 187, 186, 186),
-              blurRadius: 1.0,offset: Offset(4, 4)
-          ),],
-          gradient: LinearGradient(
-              begin: Alignment.bottomLeft,
-              stops: [
-                0.1,
-                0.4,
-                0.6,
-                0.9,
-              ],
-              end: Alignment.topRight,
-              colors: [
-                Color(0xff5EB6EF),
-                Color.fromARGB(255, 162, 218, 255),
-                Color(0xFFDCF6FF),
-                Color(0xFFDCF6FF),
-
-              ]
-          ),
-          borderRadius: BorderRadius.circular(20),
-        ),
+        // decoration: BoxDecoration(
+        //   boxShadow: [BoxShadow(
+        //       color: Color.fromARGB(255, 187, 186, 186),
+        //       blurRadius: 1.0,offset: Offset(4, 4)
+        //   ),],
+        //   gradient: LinearGradient(
+        //       begin: Alignment.bottomLeft,
+        //       stops: [
+        //         0.1,
+        //         0.4,
+        //         0.6,
+        //         0.9,
+        //       ],
+        //       end: Alignment.topRight,
+        //       colors: [
+        //         Color(0xff5EB6EF),
+        //         Color.fromARGB(255, 162, 218, 255),
+        //         Color(0xFFDCF6FF),
+        //         Color(0xFFDCF6FF),
+        //
+        //       ]
+        //   ),
+        //   borderRadius: BorderRadius.circular(20),
+        // ),
         child: Padding(
           padding: const EdgeInsets.all(5.0),
           child: Container(
@@ -91,7 +91,7 @@ class _ProfileCardState extends State<ProfileCard> {
                             child: Align(
                               alignment: Alignment.center,
                               child: Text(
-                                x=='2'?'2nd Year':'3rd Year',
+                                x=='2.0'?'2nd Year':'3rd Year',
                                 style: TextStyle(
                                     color: Color.fromARGB(255, 253, 253, 253),
                                     fontSize: 10),
@@ -139,7 +139,8 @@ class _ProfileCardState extends State<ProfileCard> {
                 )
             ),
             decoration: BoxDecoration(
-              color:Color(0xFFDCF6FF),
+              //color:Color(0xFFDCF6FF),
+              color: Colors.white,
               borderRadius: BorderRadius.circular(20),
             ),
           ),

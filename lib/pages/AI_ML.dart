@@ -1,9 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-
 import '../widgets/appbar.dart';
 import '../widgets/profile_card.dart';
-import '../widgets/old_profile_screen.dart';
 
 class AI_ML extends StatefulWidget {
   const AI_ML({super.key});
