@@ -1,3 +1,4 @@
+import 'package:crud/pages/App_Dev.dart';
 import 'package:crud/pages/kotlin.dart';
 import 'package:crud/pages/management.dart';
 import 'package:crud/profile.dart';
@@ -35,6 +36,7 @@ class MyApp extends StatelessWidget {
           MyRoutes.FlutterRoute:(context)=>FlutterPage(),
           MyRoutes.KotlinRoute:(context)=>KotlinPage(),
           MyRoutes.DSARoute:(context)=>DSAers(),
+          MyRoutes.AppDevRoute:(context)=>AppDevPage(),
           MyRoutes.DesigningRoute:(context)=>Designers(),
           MyRoutes.ManagementRoute:(context)=>ManagementPage(),
         }

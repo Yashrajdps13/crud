@@ -113,10 +113,10 @@ class _Landing_PageState extends State<Landing_Page> {
                               people_count: "10",
                               colour:0xffA8E9E3,
                               opcolor:0x66A8E9E3,
-                              renderpage: MyRoutes.FlutterRoute),
+                              renderpage: MyRoutes.AppDevRoute),
                           Domain(
                               name: "DSA & CP",
-                              tagline: "Code to conquer challenges with precision",
+                              tagline: "Code to conquer challenges",
                               people_count: "10",
                               colour:0xffEDCAAA,
                               opcolor:0x66EDCAAA,
