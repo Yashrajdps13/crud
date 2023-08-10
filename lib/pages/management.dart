@@ -119,7 +119,11 @@ class _ManagementPageState extends State<ManagementPage> {
                             bgc:0xFF004703,
                             gc1:0xff751DFF,
                             gc2:0xffC5A0FF,
-                            out:0xffD0B1FF
+                            out:0xffD0B1FF,
+                            outo:0x66D0B1FF,
+                          team: "Management Team",
+                            back_photo: "images/profile_images/management.png",
+                            link_photo: "images/profile_images/management_in.png"
                         ),)
                     );
                   },

@@ -1,6 +1,7 @@
 import 'package:crud/pages/App_Dev.dart';
 import 'package:crud/pages/kotlin.dart';
 import 'package:crud/pages/management.dart';
+import 'package:crud/pages/profile_page.dart';
 import 'package:crud/profile.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';

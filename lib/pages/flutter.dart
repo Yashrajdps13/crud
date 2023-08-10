@@ -124,7 +124,11 @@ class _FlutterPageState extends State<FlutterPage> {
                               snap: snapshot.data?.docs[index].data(),
                               domain: 'Flutter',
                               bgc:0xFF004703,gc1:0xff037777,gc2:0xff69E5E0,
-                              out:0xff69E5E0
+                              out:0xff69E5E0,
+                              outo:0x6669E5E0,
+                              team: "Team Nougat(Flutter)",
+                              back_photo: "images/profile_images/flutter.png",
+                              link_photo: "images/profile_images/flutter_in.png"
                           )
                       );
                     },

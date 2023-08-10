@@ -117,7 +117,11 @@ class _AI_MLState extends State<AI_ML> {
                             snap: snapshot.data?.docs[index].data(),
                             domain: 'AI_ML',
                             bgc:0xFF471A00,gc1:0xffFD6203,gc2:0xffC89677,
-                            out:0xffDF9568
+                            out:0xffDF9568,
+                            outo:0x66DF9568,
+                            team: "Team Grey Interface",
+                            back_photo: "images/profile_images/aiml.png",
+                            link_photo: "images/profile_images/aiml_in.png"
                         )
                     );
                   },

@@ -131,7 +131,11 @@ class _Web_developersState extends State<Web_developers> {
                                 bgc:0xFF004703,
                                 gc1:0xff017633,
                                 gc2:0xff00FF6C,
-                                out:0xff6DF1A5
+                                out:0xff6DF1A5,
+                                outo:0x666DF1A5,
+                              team: "Team 405 Found",
+                                back_photo: "images/profile_images/web.png",
+                                link_photo: "images/profile_images/web_in.png"
                             )
                         );
                       },

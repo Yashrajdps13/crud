@@ -123,7 +123,11 @@ class _KotlinPageState extends State<KotlinPage> {
                                 bgc:0xFF004703,
                                 gc1:0xff037777,
                                 gc2:0xff69E5E0,
-                                out:0xff69E5E0
+                                out:0xff69E5E0,
+                                outo:0x6669E5E0,
+                              team: "Team Nougat(Kotlin)",
+                                back_photo: "images/profile_images/kotlin.png",
+                                link_photo: "images/profile_images/kotlin_in.png"
                             )
                         );
                       },

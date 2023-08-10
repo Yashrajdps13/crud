@@ -65,7 +65,7 @@ class _AppDevPageState extends State<AppDevPage> {
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.all(Radius.circular(25)),
                                 boxShadow: [
-                                  BoxShadow(color: Color(0xff69E5E0), offset: Offset(2, 2), blurRadius: 2)
+                                  BoxShadow(color: Color(0x6669E5E0), offset: Offset(2, 2), blurRadius: 2)
                                 ],
                                 gradient: LinearGradient(begin:Alignment.bottomCenter,end:Alignment.center,colors:[Color(0xff004747),Color(0xff252525)])
                             ),
@@ -90,7 +90,7 @@ class _AppDevPageState extends State<AppDevPage> {
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.all(Radius.circular(25)),
                                 boxShadow: [
-                                  BoxShadow(color: Color(0xff69E5E0), offset: Offset(2, 2), blurRadius: 2)
+                                  BoxShadow(color: Color(0x6669E5E0), offset: Offset(2, 2), blurRadius: 2)
                                 ],
                                 gradient: LinearGradient(begin:Alignment.bottomCenter,end:Alignment.center,colors:[Color(0xff004747),Color(0xff252525)])
                             ),

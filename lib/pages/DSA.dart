@@ -115,7 +115,11 @@ class _DSAersState extends State<DSAers> {
                             snap: snapshot.data?.docs[index].data(),
                             domain: 'DSA',
                             bgc:0xFF471A00,gc1:0xff5B4129,gc2:0xffEDCAAA,
-                            out:0xffEDCAAA
+                            out:0xffEDCAAA,
+                            outo:0x66EDCAAA,
+                            team: "Team SigSTP",
+                            back_photo: "images/profile_images/dsa.png",
+                            link_photo: "images/profile_images/dsa_in.png"
                         )
                     );
                   },

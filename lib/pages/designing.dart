@@ -120,7 +120,11 @@ class _DesignersState extends State<Designers> {
                               snap: snapshot.data?.docs[index].data(),
                               domain: 'UI_UX',
                               bgc:0xFF004703,gc1:0xff6D6E3C,gc2:0xFFEFF233,
-                              out:0xffFDFF8D
+                              out:0xffFDFF8D,
+                              outo:0x66FDFF8D,
+                              team: "Design Team",
+                              back_photo: "images/profile_images/uiux.png",
+                              link_photo: "images/profile_images/uiux_in.png"
                           )
                       );
                     },
