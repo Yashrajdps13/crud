@@ -93,7 +93,18 @@ class _KotlinPageState extends State<KotlinPage> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Container(height:130),
+                            SizedBox(height: 50),
+                            GestureDetector(
+                              onTap: () => Navigator.pop(context),
+                              child: Container(
+                                height: 40,
+                                width: 40,
+                                child: Image(
+                                  image: AssetImage('images/gp19.png'),
+                                ),
+                              ),
+                            ),
+                            Container(height:27),
                             Text("Kotlin",style:TextStyle(color: Color(0xff69E5E0),fontSize: 25,fontWeight: FontWeight.bold),),
                             Container(height:15),
                             Text("Proficiency in Kotlin, including OOP, Android architecture, UI/UX design, libraries, and API integration, is essential for development"

@@ -83,24 +83,43 @@ class _AI_MLState extends State<AI_ML> {
                       ],
                     ),
                   ),
-
                   child: Padding(
-                    padding: const EdgeInsets.only(left:30.0,right:30.0),
+                    padding: const EdgeInsets.only(right:30.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Container(height:130),
-                        Text("AI & ML",style:TextStyle(color: Color(0xffDF9568),fontSize: 25,fontWeight: FontWeight.bold),),
+                        SizedBox(height: 50),
+                        Padding(
+                          padding: const EdgeInsets.only(left:24),
+                          child: GestureDetector(
+                            onTap: () => Navigator.pop(context),
+                            child: Container(
+                              height: 40,
+                              width: 40,
+                              child: Image(
+                                image: AssetImage('images/gp19.png'),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(height:27),
+                        Padding(
+                          padding: const EdgeInsets.only(left:32),
+                          child: Text("AI & ML",style:TextStyle(color: Color(0xffDF9568),fontSize: 25,fontWeight: FontWeight.bold),),
+                        ),
                         Container(height:15),
-                        Text("Knowledge of algorithms, data preprocessing, statistical analysis, programming, and model evaluation is essential."
-                          ,style:TextStyle(color: Color(0xff959595),fontSize: 14,fontWeight: FontWeight.w500),
+                        Padding(
+                          padding: const EdgeInsets.only(left:32),
+                          child: Text("Knowledge of algorithms, data preprocessing, statistical analysis, programming, and model evaluation is essential."
+                            ,style:TextStyle(color: Color(0xff959595),fontSize: 14,fontWeight: FontWeight.w500),
+                          ),
                         )
                       ],
                     ),
                   )
               ),
               Padding(
-                padding: const EdgeInsets.only(bottom: 50,left: 16,right:16),
+                padding: const EdgeInsets.only(left: 16,right:16),
                 child: StreamBuilder(
                   stream: FirebaseFirestore.instance.collection('Hackslash_ML').snapshots(),
                   builder: (context, AsyncSnapshot<QuerySnapshot<Map<String, dynamic>>> snapshot){
@@ -130,8 +149,6 @@ class _AI_MLState extends State<AI_ML> {
             ],
           ),
         ),
-
-
       ),
     );
   }

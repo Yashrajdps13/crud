@@ -1,3 +1,4 @@
+import 'package:crud/pages/About_Us.dart';
 import 'package:crud/pages/App_Dev.dart';
 import 'package:crud/pages/kotlin.dart';
 import 'package:crud/pages/management.dart';
@@ -40,6 +41,7 @@ class MyApp extends StatelessWidget {
           MyRoutes.AppDevRoute:(context)=>AppDevPage(),
           MyRoutes.DesigningRoute:(context)=>Designers(),
           MyRoutes.ManagementRoute:(context)=>ManagementPage(),
+          MyRoutes.AboutRoute:(context)=>AboutUsPage(),
         }
     );
   }

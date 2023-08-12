@@ -101,7 +101,18 @@ class _Web_developersState extends State<Web_developers> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Container(height:130),
+                            SizedBox(height: 50),
+                            GestureDetector(
+                              onTap: () => Navigator.pop(context),
+                              child: Container(
+                                height: 40,
+                                width: 40,
+                                child: Image(
+                                  image: AssetImage('images/gp19.png'),
+                                ),
+                              ),
+                            ),
+                            Container(height:27),
                             Text("Web Development",style:TextStyle(color: Color(0xff6DF1A5),fontSize: 25,fontWeight: FontWeight.bold),),
                             Container(height:15),
                             Text("Knowledge of HTML, CSS, JavaScript, frameworks, databases, backend languages, and responsive design is crucial."

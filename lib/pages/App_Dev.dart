@@ -40,16 +40,24 @@ class _AppDevPageState extends State<AppDevPage> {
                         ],
                       ),
                     ),
-
                     child: Padding(
                       padding: const EdgeInsets.only(left:30.0,right:30.0),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Container(height:130),
+                          SizedBox(height: 50),
+                          GestureDetector(
+                            onTap: () => Navigator.pop(context),
+                            child: Container(
+                              height: 40,
+                              width: 40,
+                              child: Image(
+                                image: AssetImage('images/gp19.png'),
+                              ),
+                            ),
+                          ),
+                          Container(height:27),
                           Text("App Development",style:TextStyle(color: Color(0xff69E5E0),fontSize: 25,fontWeight: FontWeight.bold),),
-
-
                         ],
                       ),
                     )

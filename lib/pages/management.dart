@@ -89,7 +89,18 @@ class _ManagementPageState extends State<ManagementPage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Container(height:130),
+                        SizedBox(height: 50),
+                        GestureDetector(
+                          onTap: () => Navigator.pop(context),
+                          child: Container(
+                            height: 40,
+                            width: 40,
+                            child: Image(
+                              image: AssetImage('images/gp19.png'),
+                            ),
+                          ),
+                        ),
+                        Container(height:27),
                         Text("Management",style:TextStyle(color: Color(0xffD4B9FE),fontSize: 25,fontWeight: FontWeight.bold),),
                         Container(height:15),
                         Text("Knowledge areas include event planning, project management, team coordination, communication skills and budgeting."

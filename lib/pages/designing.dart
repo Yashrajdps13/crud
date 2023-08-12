@@ -92,7 +92,18 @@ class _DesignersState extends State<Designers> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Container(height:130),
+                          SizedBox(height: 50),
+                          GestureDetector(
+                            onTap: () => Navigator.pop(context),
+                            child: Container(
+                              height: 40,
+                              width: 40,
+                              child: Image(
+                                image: AssetImage('images/gp19.png'),
+                              ),
+                            ),
+                          ),
+                          Container(height:27),
                           Text("UI & UX",style:TextStyle(color: Color(0xffFDFF8D),fontSize: 25,fontWeight: FontWeight.bold),),
                           Container(height:15),
                           Text("Essential knowledge includes design principles, user research, wireframing, prototyping, visual design, and usability testing"

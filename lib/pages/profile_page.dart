@@ -57,7 +57,6 @@ class ProfilePage extends StatelessWidget {
                   ClipPath(
                       clipper: shapeClip(),
                       child: Container(
-
                           height: 270,
                           decoration: BoxDecoration(
                               boxShadow: [
@@ -81,6 +80,21 @@ class ProfilePage extends StatelessWidget {
                           fit: BoxFit.cover),
                     ),
                   ),
+                  Positioned(
+                    left:35,
+                    bottom:240,
+                    child: GestureDetector(
+                      onTap: () => Navigator.pop(context),
+                      child: Container(
+                        height: 40,
+                        width: 40,
+                        child: Image(
+                          image: AssetImage('images/gp19.png'),
+                          color:Color(0xffffE1E1E1)
+                        ),
+                      ),
+                    ),
+                  ),
                 ],
               ),
               Padding(
@@ -97,7 +111,7 @@ class ProfilePage extends StatelessWidget {
                                     fontWeight: FontWeight.w700,
                                     color: Color(0xffE5E5E5))),
                             Container(height: 10),
-                            Text("HackSlash Club",
+                            Text(snap['studentPost'],
                                 style: TextStyle(
                                     fontSize: 14,
                                     fontWeight: FontWeight.w700,
@@ -111,12 +125,12 @@ class ProfilePage extends StatelessWidget {
                           ],
                         ),
                         Spacer(),
-                        GestureDetector(
+                        snap['StudentURL']!=null?GestureDetector(
                           onTap: () { _launchURL(snap['StudentURL']);},
                           child: Image(
                               image: AssetImage(link_photo), height: 65,
                           ),
-                        )
+                        ):Text('')
                       ],
                     )),
               ),
@@ -166,9 +180,7 @@ class ProfilePage extends StatelessWidget {
                       Divider(height: 20,
                         color: Colors.white70,thickness: 1,
                       ),
-                      Container(height: 10,),
-
-
+                      // Container(height: 10,),
                       // Row(
                       //   mainAxisAlignment: MainAxisAlignment.start,crossAxisAlignment: CrossAxisAlignment.start,
                       //
@@ -181,7 +193,6 @@ class ProfilePage extends StatelessWidget {
                       //           color:Color(0xffC2C2C2),fontSize: 12
                       //       )),
                       //     ),
-                      //
                       //     Container(width:10),
                       //
                       //     Icon(Icons.circle_outlined,color: Color(0xff69E5E0),size: 15,),
@@ -222,7 +233,6 @@ class ProfilePage extends StatelessWidget {
                       //     ),
                       //   ],
                       // ),
-
                     ],
                   ),
                 ),
