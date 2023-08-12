@@ -90,7 +90,7 @@ class ProfilePage extends StatelessWidget {
                         width: 40,
                         child: Image(
                           image: AssetImage('images/gp19.png'),
-                          color:Color(0xffffE1E1E1)
+                          color:Colors.white
                         ),
                       ),
                     ),
@@ -175,64 +175,63 @@ class ProfilePage extends StatelessWidget {
                         ],
                       ),
                       Container(height:40),
-                      Text("Expertise:",style: TextStyle(color:Color(0xffE5E5E5),fontSize: 15,
-                        fontWeight: FontWeight.w500,),),
-                      Divider(height: 20,
+                      snap['skills'][0]!=""?Text("Expertise:",style: TextStyle(color:Color(0xffE5E5E5),fontSize: 15,
+                        fontWeight: FontWeight.w500,),):Text(''),
+                      snap['skills'][0]!=""?Divider(height: 20,
                         color: Colors.white70,thickness: 1,
-                      ),
-                      // Container(height: 10,),
-                      // Row(
-                      //   mainAxisAlignment: MainAxisAlignment.start,crossAxisAlignment: CrossAxisAlignment.start,
-                      //
-                      //   children: [
-                      //     Icon(Icons.circle_outlined,color: Color(0xff69E5E0),size: 15,),
-                      //     Container(width:5),
-                      //     Container(
-                      //       width:120,
-                      //       child: Text(snap['skills'][0],style:TextStyle(
-                      //           color:Color(0xffC2C2C2),fontSize: 12
-                      //       )),
-                      //     ),
-                      //     Container(width:10),
-                      //
-                      //     Icon(Icons.circle_outlined,color: Color(0xff69E5E0),size: 15,),
-                      //     Container(width:5),
-                      //     Container(
-                      //       width:120,
-                      //       child: Text(snap['skills'][1],style:TextStyle(
-                      //           color:Color(0xffC2C2C2),fontSize: 12
-                      //       )),
-                      //     ),
-                      //   ],
-                      // ),
-                      //
-                      // Container(height:10),
-                      //
-                      // Row(
-                      //   mainAxisAlignment: MainAxisAlignment.start,crossAxisAlignment: CrossAxisAlignment.start,
-                      //
-                      //   children: [
-                      //     Icon(Icons.circle_outlined,color: Color(0xff69E5E0),size: 15,),
-                      //     Container(width:5),
-                      //     Container(
-                      //       width:120,
-                      //       child: Text(snap['skills'][2],style:TextStyle(
-                      //           color:Color(0xffC2C2C2),fontSize: 12
-                      //       )),
-                      //     ),
-                      //
-                      //     Container(width:10),
-                      //
-                      //     Icon(Icons.circle_outlined,color: Color(0xff69E5E0),size: 15,),
-                      //     Container(width:5),
-                      //     Container(
-                      //       width:120,
-                      //       child: Text(snap['skills'][3],style:TextStyle(
-                      //           color:Color(0xffC2C2C2),fontSize: 12
-                      //       )),
-                      //     ),
-                      //   ],
-                      // ),
+                      ):Text(''),
+                      Container(height: 10,),
+                      snap['skills'][0]!=""?Row(
+                        mainAxisAlignment: MainAxisAlignment.start,crossAxisAlignment: CrossAxisAlignment.start,
+
+                        children: [
+                          Icon(Icons.circle_outlined,color: Color(0xff69E5E0),size: 15,),
+                          Container(width:5),
+                          Container(
+                            width:120,
+                            child: Text(snap['skills'][0],style:TextStyle(
+                                color:Color(0xffC2C2C2),fontSize: 12
+                            )),
+                          ),
+                          Container(width:10),
+
+                          snap['skills'][1]!=""?Icon(Icons.circle_outlined,color: Color(0xff69E5E0),size: 15,):Text(''),
+                          Container(width:5),
+                          snap['skills'][1]!=""?Container(
+                            width:120,
+                            child: Text(snap['skills'][1],style:TextStyle(
+                                color:Color(0xffC2C2C2),fontSize: 12
+                            )),
+                          ):Text(''),
+                        ],
+                      ):Text(''),
+
+                      Container(height:10),
+
+                      snap['skills'][2]!=""?Row(
+                        mainAxisAlignment: MainAxisAlignment.start,crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Icon(Icons.circle_outlined,color: Color(0xff69E5E0),size: 15,),
+                          Container(width:5),
+                          Container(
+                            width:120,
+                            child: Text(snap['skills'][2],style:TextStyle(
+                                color:Color(0xffC2C2C2),fontSize: 12
+                            )),
+                          ),
+
+                          Container(width:10),
+
+                          snap['skills'][3]!=""?Icon(Icons.circle_outlined,color: Color(0xff69E5E0),size: 15,):Text(''),
+                          Container(width:5),
+                          snap['skills'][3]!=""?Container(
+                            width:120,
+                            child: Text(snap['skills'][3],style:TextStyle(
+                                color:Color(0xffC2C2C2),fontSize: 12
+                            )),
+                          ):Text(''),
+                        ],
+                      ):Text(''),
                     ],
                   ),
                 ),
