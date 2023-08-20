@@ -19,25 +19,20 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
-
-
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        routes:{
-          "/":(context) => Landing_Page(),
-          MyRoutes.landingRoute:(context)=>Landing_Page(),
-          MyRoutes.AI_MLRoute:(context)=>AI_ML(),
-          MyRoutes.Web_DevRoute:(context)=>Web_developers(),
-          MyRoutes.FlutterRoute:(context)=>FlutterPage(),
-          MyRoutes.KotlinRoute:(context)=>KotlinPage(),
-          MyRoutes.DSARoute:(context)=>DSAers(),
-          MyRoutes.AppDevRoute:(context)=>AppDevPage(),
-          MyRoutes.DesigningRoute:(context)=>Designers(),
-          MyRoutes.ManagementRoute:(context)=>ManagementPage(),
-          MyRoutes.AboutRoute:(context)=>AboutUsPage(),
-        }
-    );
+    return MaterialApp(debugShowCheckedModeBanner: false, routes: {
+      "/": (context) => Landing_Page(),
+      MyRoutes.landingRoute: (context) => Landing_Page(),
+      MyRoutes.AI_MLRoute: (context) => AI_ML(),
+      MyRoutes.Web_DevRoute: (context) => Web_developers(),
+      MyRoutes.FlutterRoute: (context) => FlutterPage(),
+      MyRoutes.KotlinRoute: (context) => KotlinPage(),
+      MyRoutes.DSARoute: (context) => DSAers(),
+      MyRoutes.AppDevRoute: (context) => AppDevPage(),
+      MyRoutes.DesigningRoute: (context) => Designers(),
+      MyRoutes.ManagementRoute: (context) => ManagementPage(),
+      MyRoutes.AboutRoute: (context) => AboutUsPage(),
+    });
   }
 }
