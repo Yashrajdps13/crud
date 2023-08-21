@@ -4,43 +4,49 @@ import "package:crud/routes/mapping.dart";
 import "package:flutter/material.dart";
 
 class ProfileCard extends StatelessWidget {
-  final snap,domain;
+  final snap, domain;
   final bgc, gc1, gc2, out;
   final outo;
   final team;
-  final back_photo,link_photo;
-  ProfileCard(
-      {required this.snap,
-        required this.domain,
-        required this.bgc,
-        required this.gc1,
-        required this.gc2,
-        required this.outo,
-        required this.out,
-        required this.team,
-        required this.back_photo,
-        required this.link_photo,
-      });
+  final back_photo, link_photo;
+  ProfileCard({
+    required this.snap,
+    required this.domain,
+    required this.bgc,
+    required this.gc1,
+    required this.gc2,
+    required this.outo,
+    required this.out,
+    required this.team,
+    required this.back_photo,
+    required this.link_photo,
+  });
 
   @override
   Widget build(BuildContext context) {
-    String name=snap['studentName'];
-    String photo=snap['photoURL'];
-    String y=snap['studentYear'].toString();
-    String department=snap['studentBranch'];
-    String year= y=='2.0'? 'Second':'Third';
+    String name = snap['studentName'];
+    String photo = snap['photoURL'];
+    String y = snap['studentYear'].toString();
+    String department = snap['studentBranch'];
+    String year = y == '2.0' ? 'Second' : 'Third';
     return GestureDetector(
-      onTap: (){
-        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>ProfilePage(snap: snap,team: team,back_photo: back_photo,link_photo: link_photo)));
+      onTap: () {
+        Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) => ProfilePage(
+                snap: snap,
+                team: team,
+                back_photo: back_photo,
+                link_photo: link_photo)));
       },
       child: Container(
           margin: EdgeInsets.only(top: 20),
           height: 120,
-          width: 320,
+          width: double.infinity,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.all(Radius.circular(25)),
             boxShadow: [
-              BoxShadow(color: Color(outo), offset: Offset(1.5, 1), blurRadius: 2)
+              BoxShadow(
+                  color: Color(outo), offset: Offset(1.5, 1), blurRadius: 2)
             ],
             color: Color.fromARGB(255, 23, 30, 30),
           ),
