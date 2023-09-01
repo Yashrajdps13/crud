@@ -73,7 +73,7 @@ class _Landing_PageState extends State<Landing_Page> {
                               name: "App Development",
                               tagline:
                                   "Innovating experiences through mobile apps",
-                              people_count: "10",
+                              people_count: "15",
                               colour: 0xffA8E9E3,
                               opcolor: 0x66A8E9E3,
                               renderpage: MyRoutes.AppDevRoute),

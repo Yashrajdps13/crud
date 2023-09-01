@@ -19,7 +19,7 @@ class _MyWidgetState extends State<MyWidget> {
   }
 
   void _navigatetohome() async {
-    await Future.delayed(Duration(milliseconds: 2300), () {});
+    await Future.delayed(Duration(milliseconds: 1400), () {});
     Navigator.pushReplacement(context,
         MaterialPageRoute(builder: (BuildContext context) => Landing_Page()));
   }
