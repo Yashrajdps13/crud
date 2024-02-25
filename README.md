@@ -1,16 +1,8 @@
-# crud
+# Hyve
 
-A new Flutter project.
+Discover Hyve, a groundbreaking app crafted by sophomore innovators! Hyve seamlessly links college students with skilled mentors through a LinkedIn-inspired platform. 
 
-## Getting Started
+Developed during their freshman year, this app fosters collaboration, knowledge sharing, and career growth.
 
-This project is a starting point for a Flutter application.
+Join the Hyve community today and unlock endless opportunities to connect, learn, and succeed together! 🚀 #HyveConnects
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
